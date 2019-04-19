@@ -1,4 +1,4 @@
 setuptools
-Cython
+git+https://github.com/cython/cython.git
 cysignals
 Sphinx>=1.6

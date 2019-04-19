@@ -37,7 +37,7 @@ class build_ext(_build_ext):
             "autotestdict.cdef": True,
             "binding": True,
             "cdivision": True,
-            "language_level": 2,
+            "language_level": "3str",
         }
 
         _build_ext.finalize_options(self)

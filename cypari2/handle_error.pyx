@@ -21,8 +21,6 @@ AUTHORS:
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-from __future__ import absolute_import, division, print_function
-
 from cpython cimport PyErr_Occurred
 
 from cysignals.signals cimport sig_block, sig_unblock, sig_error

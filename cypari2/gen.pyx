@@ -55,8 +55,6 @@ AUTHORS:
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
 
-from __future__ import absolute_import, division, print_function
-
 cimport cython
 
 from cpython.object cimport (Py_EQ, Py_NE, Py_LE, Py_GE, Py_LT, Py_GT,
@@ -141,6 +139,7 @@ cdef extern from *:
     GEN new_nfeltup(GEN nf, GEN x, GEN zknf)
 
 
+@cython.trashcan(True)
 cdef class Gen(Gen_base):
     """
     Wrapper for a PARI ``GEN`` with memory management.
