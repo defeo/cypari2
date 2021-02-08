@@ -12,6 +12,7 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
+  - "3.9"
 env:
   - PARI_VERSION=pari-2.9.4
     URLDIR=OLD/2.9
